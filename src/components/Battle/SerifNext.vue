@@ -7,7 +7,17 @@ export default {
   name: "SerifNext",
   methods: {
     push: function() {
-      this.$store.dispatch("battle/doCommandMode")
+      switch(this.$store.getters['battle/battleState']) {
+        case 1:
+          this.$store.dispatch('battle/doNextState1')
+          break
+        case 2:
+          this.$store.dispatch('battle/doNextState2')
+          break
+        default:
+          this.$store.dispatch("battle/doCommandMode")
+          break
+      }
     }
   }
 }

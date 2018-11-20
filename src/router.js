@@ -7,6 +7,6 @@ import Bag from '@/components/Bag.vue'
 export default new VueRouter({
   routes: [
     { path: "/", component: Battle },
-    { path: "/bag", component: Bag }
+    { path: "/bag", component: Bag },
   ]
 })

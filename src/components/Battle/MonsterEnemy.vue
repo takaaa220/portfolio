@@ -1,6 +1,6 @@
 <template>
   <div class="monster-enemy">
-    <transition name="enemy" appear v-if=appear>
+    <transition name="enemy" appear v-if="battleState==0">
       <img v-bind:src=img>
     </transition>
     <img v-bind:src=img v-else>
@@ -13,20 +13,24 @@ export default {
   mixins: [ imgReadMixin ],
   computed: {
     character() { return this.$store.getters['battle/enemy']},
-    appear() { return this.$store.getters['battle/appear'] }
+    battleState() { return this.$store.getters['battle/battleState'] }
   }
 }
 </script>
 
 <style lang="scss">
-.enemy-enter-active, .enemy-leave-active {
-  transition: transform .5s, opacity 1s;
+.enemy-enter-active {
+  transition: transform 1s, opacity 1s;
 }
-.enemy-enter, .enemy-leave-to {
-  transform: scale(0, 0);
+.enemy-leave-active {
+  position: absolute;
+}
+.enemy-enter {
+  transform: translateX(-300px);
   opacity: 0;
 }
 .monster-enemy {
+  position: relative;
   grid-area: monster1;
   width: 70%;
   height: 100%;
