@@ -19,11 +19,11 @@ export default {
 }
 .serif-next {
   position: absolute;
-  bottom: -20px;
-  right: 20px;
+  bottom: -2rem;
+  right: 2rem;
   // background-color: #fff;
-  border: 20px solid transparent;
-  border-top: 20px solid #333;
+  border: 2rem solid transparent;
+  border-top: 2rem solid #333;
   animation: flash 1s ease-in-out infinite;
   &:hover {
     cursor: pointer;

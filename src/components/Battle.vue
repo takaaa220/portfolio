@@ -28,9 +28,9 @@ export default {
 <style lang="scss">
 .battle {
   display: grid;
-  grid-gap: 5px;
-  grid-template-rows: 130px 130px 140px;
-  grid-template-columns: 240px 20px 240px;
+  grid-gap: .5rem;
+  grid-template-rows: 13rem 13rem 14rem;
+  grid-template-columns: 24rem 2rem 24rem;
   grid-template-areas:
         "gauge1 gauge1 monster1"
         "monster2 gauge2 gauge2"

@@ -15,8 +15,8 @@ export default {
   h2 {
     font-size: 2rem;
     font-weight: normal;
-    letter-spacing: 1.2px;
-    padding-left: 20px;
+    letter-spacing: .12rem;
+    padding-left: 2rem;
     span {
       font-size: 1.5rem;
       font-weight: bold;

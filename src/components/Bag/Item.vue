@@ -37,21 +37,16 @@ export default {
   50% {opacity: 0;}
 }
 .item {
-  // height: 60px;
-  // padding: 5px 10px;
-  // display: grid;
-  // grid-template-columns: 50px 200px 1fr;
-  // grid-gap: 5px;
   &:hover {
     animation: flash .7s ease-in-out infinite;
     cursor: pointer;
   }
   a {
-    height: 60px;
-    padding: 5px 10px;
+    height: 6rem;
+    padding: .5rem 1rem;
     display: grid;
-    grid-template-columns: 50px 200px 1fr;
-    grid-gap: 5px;
+    grid-template-columns: 5rem 20rem 1fr;
+    grid-gap: .5rem;
     img {
       width: 100%;
       height: 100%;
@@ -60,7 +55,7 @@ export default {
     .item-gauge {
       .item-hp {
         text-align: right;
-        padding-right: 20px;
+        padding-right: 2rem;
       }
     }
   }

@@ -23,8 +23,8 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  min-width: 540px;
-  min-height: 440px;
+  min-width: 54rem;
+  min-height: 44rem;
   font-family: "pokemon font", sans-serif;
   font-size: 1.5rem;
   background-color: black;
@@ -41,10 +41,10 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 540px;
-  height: 440px;
+  width: 54rem;
+  height: 44rem;
   background-color: white;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
 }
 </style>

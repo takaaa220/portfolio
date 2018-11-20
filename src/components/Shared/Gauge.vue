@@ -24,11 +24,11 @@ export default {
 
 <style lang="scss">
 .hps {
-  margin: 0 0 0 10px;
-  border-right: solid 10px #333;
-  border-bottom: solid 2px #333;
+  margin: 0 0 0 1rem;
+  border-right: solid 1rem #333;
+  border-bottom: solid .2rem #333;
   display: grid;
-  grid-template-columns: 45px 1fr;
+  grid-template-columns: 4.5rem 1fr;
   .hp {
     font-size: 1.2rem;
     font-weight: bold;
@@ -38,7 +38,7 @@ export default {
   }
   .hp-gauge {
     position: relative;
-    top: 8px;
+    top: .8rem;
     // width: 100%;
     height: 45%;
     background-color: green;

@@ -29,21 +29,21 @@ export default {
   grid-area: serif;
   position: relative;
   height: 100%;
-  padding: 2px;
-  border-radius: 10px;
-  border: solid 2px #333;
+  padding: .2rem;
+  border-radius: 1rem;
+  border: solid .2rem #333;
   .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    border: solid 2px #333;
-    border-top: solid 5px #333;
-    border-bottom: solid 5px #333;
+    border-radius: 1rem;
+    border: solid .2rem #333;
+    border-top: solid .5rem #333;
+    border-bottom: solid .5rem #333;
     .content {
       position: absolute;
       bottom: 0;
-      padding: 5px 20px;
+      padding: .5rem 2rem;
       font-size: 2.4rem;
       line-height: 2.0;
       a {

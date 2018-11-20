@@ -33,18 +33,18 @@ export default {
     grid-template-rows: 30px 1fr;
     .gauge {
       position: relative;
-      border-bottom: 3px solid #333;
-      border-radius: 0 0 0 15px;
-      border-left: 10px solid #333;
+      border-bottom: .3rem solid #333;
+      border-radius: 0 0 0 1.5rem;
+      border-left: 1rem solid #333;
       &:after {
         content: "";
         position: absolute;
-        bottom: -3px;
-        right: -10px;
-        border-top: 5px solid transparent;
-        border-left: 10px solid #333;
-        border-bottom: 5px solid #333;
-        border-right: 10px solid transparent;
+        bottom: -0.3rem;
+        right: -1rem;
+        border-top: .5rem solid transparent;
+        border-left: 1rem solid #333;
+        border-bottom: .5rem solid #333;
+        border-right: 1rem solid transparent;
       }
     }
   }

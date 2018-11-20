@@ -22,18 +22,18 @@ export default {
 <style lang="scss">
 .command {
   position: absolute;
-  top: -5px;
-  right: -2px;
-  width: 250px;
-  height: 150px;
-  padding: 2px;
-  border-radius: 10px;
-  border: 2px solid #333;
-  box-shadow: 0 0 10px #fff;
+  top: -0.5rem;
+  right: -0.2rem;
+  width: 25rem;
+  height: 15rem;
+  padding: .2rem;
+  border-radius: 1rem;
+  border: .2rem solid #333;
+  box-shadow: 0 0 1rem #fff;
   background-color: #fff;
   .wrapper {
     display: grid;
-    padding: 20px 10px;
+    padding: 2rem 1rem;
     font-size: 2.4rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
