@@ -3,7 +3,7 @@
     <transition name="me" appear v-if=appear>
       <img v-bind:src=me.img>
     </transition>
-    <img v-bind:src=img v-else>
+    <img v-bind:src=me.img v-else>
   </div>
 </template>
 

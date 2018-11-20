@@ -3,7 +3,7 @@
     <transition name="enemy" appear v-if=appear>
       <img v-bind:src=me.img>
     </transition>
-    <img v-bind:src=img v-else>
+    <img v-bind:src=me.img v-else>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    // object-fit: cover;
     border-radius: 50%;
   }
 }

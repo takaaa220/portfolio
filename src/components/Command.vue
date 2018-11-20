@@ -41,7 +41,7 @@ export default {
           { id: 3, name: "しごと",
             msg: "Ruby Reactをつかってインターンちゅうです" },
           { id: 4, name: "れんらく",
-            msg: "Twitter: taketakepro におねがいします" }
+            msg: "Twitter taketakepro におねがいします" }
         ]
         this.$store.dispatch("battle/doUpdateCommands", commands)
       }
