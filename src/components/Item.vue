@@ -19,11 +19,6 @@ export default {
   components: {
     Character, Gauge
   },
-  data() {
-    return {
-      img: require('../assets/images/ruby.jpg')
-    }
-  },
   methods: {
     push(msg) {
       this.$store.dispatch("battle/doMessageMode", msg)

@@ -1,8 +1,7 @@
 <template>
   <div class="monster-me">
     <transition name="me" appear>
-      <div class="monster">
-      </div>
+      <img v-bind:src=img>
     </transition>
   </div>
 </template>
@@ -11,6 +10,11 @@
 export default {
   computed: {
     appear() { return this.$store.getters['battle/appear'] }
+  },
+  data() {
+    return {
+      img: require('../assets/images/takashi.png')
+    }
   },
   mounted() {
     this.$store.commit('battle/setAppear', { appear: false })
@@ -28,12 +32,13 @@ export default {
 }
 .monster-me {
   grid-area: monster2;
-  .monster {
-    width: 80%;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  img {
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
-    background: transparent url('./../assets/images/takashi.png') no-repeat center center;
-    background-size: 60%;
+    object-fit: cover;
     border-radius: 50%;
   }
 }

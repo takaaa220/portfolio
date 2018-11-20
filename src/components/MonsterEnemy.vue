@@ -1,14 +1,18 @@
 <template>
-    <div class="monster-enemy">
-      <transition name="enemy" appear>
-        <div class="monster">
-        </div>
-      </transition>
-    </div>
+  <div class="monster-enemy">
+    <transition name="enemy" appear>
+      <img v-bind:src=img>
+    </transition>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      img: require('../assets/images/web.svg')
+    }
+  }
 }
 </script>
 
@@ -22,12 +26,13 @@ export default {
 }
 .monster-enemy {
   grid-area: monster1;
-  .monster {
-    width: 80%;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  img {
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
-    background: url(./../assets/images/web.svg) no-repeat center center;
-    background-size: 70%;
+    object-fit: cover;
   }
 }
 </style>
