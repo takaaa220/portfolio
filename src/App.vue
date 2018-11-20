@@ -23,6 +23,8 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  min-width: 540px;
+  min-height: 440px;
   font-family: "pokemon font", sans-serif;
   font-size: 1.5rem;
   background-color: black;
