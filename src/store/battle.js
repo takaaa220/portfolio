@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    message: "あ！ やせいの Web が とびだしてきた！",
+    message: "あ！ やせいの おおにしくん が とびだしてきた！",
     commandShow: false,
     nextShow: true,
     gaugeShow: false,
@@ -17,7 +17,7 @@ export default {
         msg: "Twitter taketakepro におねがいします" }
     ],
     me: { name: "ひらた♂ ", lv: "22", hp: 3, img: require('../assets/images/takashi.png') },
-    enemy: { name: "Web", lv: "100", hp: 0, img: require('../assets/images/ohnishi.jpg') }
+    enemy: { name: "おおにしくん♂", lv: "100", hp: 0, img: require('../assets/images/ohnishi.jpg') }
   },
   getters: {
     message(state) { return state.message },
