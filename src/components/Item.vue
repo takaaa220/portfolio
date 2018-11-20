@@ -19,6 +19,9 @@ export default {
   components: {
     Character, Gauge
   },
+  mounted() {
+    this.$store.commit('battle/setAppear', { appear: false })
+  },
   methods: {
     push(msg) {
       this.$store.dispatch("battle/doMessageMode", msg)

@@ -1,8 +1,9 @@
 <template>
   <div class="monster-me">
-    <transition name="me" appear>
+    <transition name="me" appear v-if=appear>
       <img v-bind:src=img>
     </transition>
+    <img v-bind:src=img v-else>
   </div>
 </template>
 
@@ -15,9 +16,6 @@ export default {
     return {
       img: require('../assets/images/takashi.png')
     }
-  },
-  mounted() {
-    this.$store.commit('battle/setAppear', { appear: false })
   }
 }
 </script>

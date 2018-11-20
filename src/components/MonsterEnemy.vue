@@ -1,8 +1,9 @@
 <template>
   <div class="monster-enemy">
-    <transition name="enemy" appear>
+    <transition name="enemy" appear v-if=appear>
       <img v-bind:src=img>
     </transition>
+    <img v-bind:src=img v-else>
   </div>
 </template>
 
@@ -12,6 +13,9 @@ export default {
     return {
       img: require('../assets/images/web.svg')
     }
+  },
+  computed: {
+    appear() { return this.$store.getters['battle/appear'] }
   }
 }
 </script>
