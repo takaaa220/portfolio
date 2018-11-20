@@ -1,9 +1,12 @@
 <template>
-  <div class="monster-me">
     <transition name="me" appear v-if=appear>
-      <img v-bind:src=img>
+      <div class="monster-me">
+        <img v-bind:src=img>
+      </div>
     </transition>
-    <img v-bind:src=img v-else>
+    <div class="monster-me" v-else>
+      <img v-bind:src=img>
+    </div>
   </div>
 </template>
 
@@ -28,10 +31,13 @@ export default {
 }
 .monster-me {
   grid-area: monster2;
-  width: 70%;
+  width: 60%;
   height: 100%;
   margin: 0 auto;
+  border-radius: 50%;
+  background-color: black;
   img {
+    opacity: .75;
     width: 100%;
     height: 100%;
     object-fit: cover;
