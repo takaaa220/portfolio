@@ -32,7 +32,7 @@ export default {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    background: transparent url(./../assets/images/takashi.png) no-repeat center center;
+    background: transparent url('./../assets/images/takashi.png') no-repeat center center;
     background-size: 60%;
     border-radius: 50%;
   }
