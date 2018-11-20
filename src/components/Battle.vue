@@ -9,16 +9,15 @@
 </template>
 
 <script>
-import Battle from '@/components/Battle.vue'
-import GaugeEnemy from '@/components/GaugeEnemy.vue'
-import GaugeMe from '@/components/GaugeMe.vue'
-import MonsterEnemy from '@/components/MonsterEnemy.vue'
-import MonsterMe from '@/components/MonsterMe.vue'
-import Serif from '@/components/Serif.vue'
+import GaugeEnemy from '@/components/Battle/GaugeEnemy.vue'
+import GaugeMe from '@/components/Battle/GaugeMe.vue'
+import MonsterEnemy from '@/components/Battle/MonsterEnemy.vue'
+import MonsterMe from '@/components/Battle/MonsterMe.vue'
+import Serif from '@/components/Battle/Serif.vue'
 export default {
   name: "Battle",
   components: {
-    Battle, GaugeEnemy, GaugeMe, MonsterEnemy, MonsterMe, Serif
+    GaugeEnemy, GaugeMe, MonsterEnemy, MonsterMe, Serif
   },
   computed: {
     gaugeShow() { return this.$store.getters['battle/gaugeShow']}

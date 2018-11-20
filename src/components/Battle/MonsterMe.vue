@@ -1,16 +1,18 @@
 <template>
   <div class="monster-me">
     <transition name="me" appear v-if=appear>
-      <img v-bind:src=me.img>
+      <img v-bind:src=img>
     </transition>
-    <img v-bind:src=me.img v-else>
+    <img v-bind:src=img v-else>
   </div>
 </template>
 
 <script>
+import imgReadMixin from '@/mixins/imgReadMixin.js'
 export default {
+  mixins: [ imgReadMixin ],
   computed: {
-    me() { return this.$store.getters['battle/me']},
+    character() { return this.$store.getters['battle/me']},
     appear() { return this.$store.getters['battle/appear'] }
   },
 }

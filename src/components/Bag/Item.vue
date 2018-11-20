@@ -1,7 +1,7 @@
 <template>
   <li class="item" v-on:click="push(character.msg)">
     <router-link to="/">
-      <img v-bind:src=character.img>
+      <img v-bind:src=img>
       <Character v-bind:character=character />
       <div class="item-gauge">
         <div class="item-hp">{{ character.type }}</div>
@@ -12,10 +12,12 @@
 </template>
 
 <script>
-import Character from '@/components/Character.vue'
-import Gauge from '@/components/Gauge.vue'
+import Character from '@/components/Shared/Character.vue'
+import Gauge from '@/components/Shared/Gauge.vue'
+import imgReadMixin from '@/mixins/imgReadMixin.js'
 export default {
   props: [ 'character' ],
+  mixins: [ imgReadMixin ],
   components: {
     Character, Gauge
   },
@@ -23,8 +25,8 @@ export default {
     this.$store.commit('battle/setAppear', { appear: false })
   },
   methods: {
-    push(msg) {
-      this.$store.dispatch("battle/doMessageMode", msg)
+    push() {
+      this.$store.dispatch("battle/doMessageMode", this.character.msg)
     }
   }
 }

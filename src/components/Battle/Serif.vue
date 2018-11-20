@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import CommandList from '@/components/CommandList.vue'
-import SerifNext from '@/components/SerifNext.vue'
+import CommandList from '@/components/Battle/CommandList.vue'
+import SerifNext from '@/components/Battle/SerifNext.vue'
 export default {
   name: "Serif",
   components: { CommandList, SerifNext },

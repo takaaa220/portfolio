@@ -1,21 +1,23 @@
 <template>
   <div class="gauge-me">
     <div class="gauges">
-      <Character v-bind:character=me />
+      <Character v-bind:character=character />
       <div class="gauge">
-        <Gauge v-bind:hp=me.hp />
+        <Gauge v-bind:hp=character.hp />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Character from "@/components/Character.vue"
-import Gauge from '@/components/Gauge.vue'
+import Character from "@/components/Shared/Character.vue"
+import Gauge from '@/components/Shared/Gauge.vue'
+import imgReadMixin from '@/mixins/imgReadMixin.js'
 export default {
   components: { Character, Gauge },
+  mixins: [ imgReadMixin ],
   computed: {
-    me() { return this.$store.getters['battle/me'] }
+    character() { return this.$store.getters['battle/me'] }
   }
 }
 </script>

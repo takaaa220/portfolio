@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Command from '@/components/Command.vue'
+import Command from '@/components/Battle/Command.vue'
 export default {
   name: "CommandList",
   components: {
