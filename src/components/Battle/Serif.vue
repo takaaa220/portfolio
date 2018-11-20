@@ -47,9 +47,9 @@ export default {
       font-size: 2.4rem;
       line-height: 2.0;
       a {
-        text-decoration: underline;
+        color: blue;
         &:hover {
-          color: blue;
+          text-decoration: underline;
         }
       }
     }

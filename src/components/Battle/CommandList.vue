@@ -33,7 +33,7 @@ export default {
   background-color: #fff;
   .wrapper {
     display: grid;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem 1rem;
     font-size: 2.4rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
