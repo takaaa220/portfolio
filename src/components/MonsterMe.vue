@@ -1,7 +1,7 @@
 <template>
   <div class="monster-me">
     <transition name="me" appear v-if=appear>
-      <img v-bind:src=img>
+      <img v-bind:src=me.img>
     </transition>
     <img v-bind:src=img v-else>
   </div>
@@ -10,13 +10,9 @@
 <script>
 export default {
   computed: {
+    me() { return this.$store.getters['battle/me']},
     appear() { return this.$store.getters['battle/appear'] }
   },
-  data() {
-    return {
-      img: require('../assets/images/takashi.png')
-    }
-  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="monster-enemy">
     <transition name="enemy" appear v-if=appear>
-      <img v-bind:src=img>
+      <img v-bind:src=me.img>
     </transition>
     <img v-bind:src=img v-else>
   </div>
@@ -9,12 +9,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      img: require('../assets/images/web.svg')
-    }
-  },
   computed: {
+    me() { return this.$store.getters['battle/enemy']},
     appear() { return this.$store.getters['battle/appear'] }
   }
 }
@@ -37,6 +33,7 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
   }
 }
 </style>

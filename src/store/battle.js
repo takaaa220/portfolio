@@ -16,8 +16,8 @@ export default {
       { id: 4, name: "れんらく",
         msg: "Twitter taketakepro におねがいします" }
     ],
-    me: { name: "ひらた♂ ", lv: "22", hp: 3, img: "takashi.png" },
-    enemy: { name: "Web", lv: "100", hp: 0, img: "ruby.jpg" }
+    me: { name: "ひらた♂ ", lv: "22", hp: 3, img: require('../assets/images/takashi.png') },
+    enemy: { name: "Web", lv: "100", hp: 0, img: require('../assets/images/ohnishi.jpg') }
   },
   getters: {
     message(state) { return state.message },
