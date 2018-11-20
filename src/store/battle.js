@@ -14,7 +14,7 @@ export default {
       { id: 3, name: "しごと",
         msg: "Ruby Reactをつかってインターンちゅうです" },
       { id: 4, name: "れんらく",
-        msg: "Twitter: taketakepro におねがいします" }
+        msg: "Twitter taketakepro におねがいします" }
     ],
     me: { name: "ひらた♂ ", lv: "22", hp: 3, img: "takashi.png" },
     enemy: { name: "Web", lv: "100", hp: 0, img: "ruby.jpg" }
