@@ -1,20 +1,20 @@
 export default {
   namespaced: true,
   state: {
-    message: "あ！ やせいの Web が とびだしてきた！",
+    message: "あ！ やせいの<br>Web がとびだしてきた！",
     commandShow: false,
     nextShow: true,
     gaugeShow: false,
     appear: true,
     commands: [
       { id: 1, name: "わたし",
-        msg: "だいがくいんをきゅうがくちゅう とうきょうにすんでいます"},
+        msg: "だいがくいんをきゅうがくちゅう<br>とうきょうにすんでいます"},
       { id: 2, name: "ぎじゅつ",
-        msg: "Ruby Python C++ Vue Reactをべんきょうしてます" },
+        msg: "Ruby Python C++ Vue React<br>をべんきょうしてます" },
       { id: 3, name: "しごと",
-        msg: "Ruby Reactをつかってインターンちゅうです" },
+        msg: "さくせいちゅうです<br>もうちょっとまってね" },
       { id: 4, name: "れんらく",
-        msg: "Twitter taketakepro におねがいします" }
+        msg: "Twitter→<a href='https://twitter.com/taketakepro'>taketakepro</a><br>Github→<a href='https://github.com/takaaa220/'>takaaa220</a>" }
     ],
     me: { name: "ひらた♂ ", lv: "22", hp: 3, img: 'takashi.png' },
     enemy: { name: "Web", lv: "100", hp: 0, img: 'web.svg' }

@@ -2,7 +2,7 @@
   <div class="serif">
     <div class="wrapper">
       <div class="content">
-        {{ message }}
+        <p v-html="message"></p>
       </div>
     </div>
     <CommandList v-if="commandShow"/>
@@ -46,6 +46,12 @@ export default {
       padding: 5px 20px;
       font-size: 2.4rem;
       line-height: 2.0;
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: blue;
+        }
+      }
     }
   }
 }
