@@ -5,9 +5,8 @@ export default {
     battleState: 0,
     commandShow: false,
     nextShow: true,
-    gaugeShow: false,
-    monsterShow: true,
-    serifShow: false,
+    me: { name: "ひらた♂ ", lv: "22", hp: 3, img: 'man.png' },
+    enemy: { name: "Web", lv: "100", hp: 0, img: 'web.svg' },
     commands: [
       { id: 1, name: "わたし",
         msg: "だいがくいんをきゅうがくちゅう<br>とうきょうにすんでいます"},
@@ -17,21 +16,16 @@ export default {
         msg: "さくせいちゅうです<br>もうちょっとまってね" },
       { id: 4, name: "れんらく",
         msg: "Twitter→<a href='https://twitter.com/taketakepro'>taketakepro</a><br>Github→<a href='https://github.com/takaaa220/'>takaaa220</a>" }
-    ],
-    me: { name: "ひらた♂ ", lv: "22", hp: 3, img: 'man.png' },
-    enemy: { name: "Web", lv: "100", hp: 0, img: 'web.svg' }
+    ]
   },
   getters: {
     message(state) { return state.message },
     battleState(state) { return state.battleState },
     commandShow(state) { return state.commandShow },
     nextShow(state) { return state.nextShow },
-    gaugeShow(state) { return state.gaugeShow },
-    monsterShow(state) { return state.monsterShow },
-    serifShow(state) { return state.serifShow },
-    commands(state) { return state.commands },
     me(state) { return state.me },
-    enemy(state) { return state.enemy }
+    enemy(state) { return state.enemy },
+    commands(state) { return state.commands }
   },
   mutations: {
     setMessage(state, payload) {
@@ -40,41 +34,24 @@ export default {
     setMeImg(state, payload) {
       state.me.img = payload.me.img
     },
-    setCommandShow(state, payload) {
-      state.commandShow = payload.commandShow
-    },
     setCommands(state, payload) {
       state.commands = payload.commands
-    },
-    setGaugeShow(state, payload) {
-      state.gaugeShow = payload.gaugeShow
     },
     setNextShow(state, payload) {
       state.nextShow = payload.nextShow
     },
-    setMonsterShow(state, payload) {
-      state.monsterShow = payload.monsterShow
-    },
     setCommandsShow(state, payload) {
       state.commandsShow = payload.commandsShow
-    },
-    setSerifShow(state, payload) {
-      state.serifShow = payload.serifShow
     },
     setBattleState(state, payload) {
       state.battleState = payload.battleState
     }
   },
   actions: {
-    doUpdateMessage({ commit }, message) {
-      commit('setMessage', { message } ),
-      commit('setNextShow', { nextShow: true })
-    },
     doCommandMode({ commit }) {
       commit('setMessage', { message: ""}),
       commit('setCommandShow', { commandShow: true }),
       commit('setNextShow', { nextShow: false }),
-      commit('setGaugeShow', { gaugeShow: true}),
       commit('setBattleState', { battleState: 5})
     },
     doMessageMode({ commit }, message) {

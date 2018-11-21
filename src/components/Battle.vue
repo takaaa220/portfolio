@@ -1,10 +1,10 @@
 <template>
   <div class="battle">
-    <GaugeEnemy v-show="gaugeShow" />
-    <MonsterEnemy v-show="monsterShow"/>
-    <MonsterMe v-show="monsterShow"/>
-    <GaugeMe v-show="gaugeShow" />
-    <Serif v-show="serifShow"/>
+    <GaugeEnemy v-show="battleState==5" />
+    <MonsterEnemy />
+    <MonsterMe />
+    <GaugeMe v-show="battleState==5" />
+    <Serif v-show="battleState!=0"/>
   </div>
 </template>
 
@@ -20,17 +20,14 @@ export default {
     GaugeEnemy, GaugeMe, MonsterEnemy, MonsterMe, Serif
   },
   created() {
-    if (this.$store.getters['battle/battleState'] == 0){
+    if (this.battleState == 0){
       setTimeout(() => {
-        this.$store.commit('battle/setSerifShow', { serifShow: true }),
         this.$store.commit('battle/setBattleState', { battleState: 1})
       }, 2000)
     }
   },
   computed: {
-    gaugeShow() { return this.$store.getters['battle/gaugeShow']},
-    monsterShow() { return this.$store.getters['battle/monsterShow']},
-    serifShow() { return this.$store.getters['battle/serifShow']}
+    battleState() { return this.$store.getters['battle/battleState']}
   }
 }
 </script>
