@@ -40,8 +40,8 @@ export default {
     setNextShow(state, payload) {
       state.nextShow = payload.nextShow
     },
-    setCommandsShow(state, payload) {
-      state.commandsShow = payload.commandsShow
+    setCommandShow(state, payload) {
+      state.commandShow = payload.commandShow
     },
     setBattleState(state, payload) {
       state.battleState = payload.battleState
@@ -64,7 +64,7 @@ export default {
     },
     doNextState1({ commit }){
       commit('setMessage', { message: "ゆけ! <br>ひらた!"}),
-      commit('setCommandsShow', { commandsShow: true}),
+      // commit('setCommandShow', { commandShow: true}),
       commit('setNextShow', { nextShow: true}),
       commit('setBattleState', { battleState: 2})
     },
