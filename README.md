@@ -1,21 +1,14 @@
-# portfolio
+# ポケモン風ポートフォリオ
+https://takaaa220.github.io/portfolio
 
-> A Vue.js project
+## 概要
+ポケモンのバトル画面風のポートフォリオを作ってみました．  
+初めてVueを触ったので，コードの質についてはお察しください笑
 
-## Build Setup
+もしよかったらPRなどもしていただけるとありがたいです．
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 使用技術
+- Vue
+- Vuex
+- Vue-Router
