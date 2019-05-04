@@ -12,3 +12,5 @@ https://takaaa220.github.io/portfolio
 - Vue
 - Vuex
 - Vue-Router
+
+
