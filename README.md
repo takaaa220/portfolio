@@ -1,4 +1,4 @@
-# ポケモン風ポートフォリオ
+# ポケモン風ポートフォリオです
 https://takaaa220.github.io/portfolio
 
 ## 概要
@@ -12,3 +12,5 @@ https://takaaa220.github.io/portfolio
 - Vue
 - Vuex
 - Vue-Router
+
+
