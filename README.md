@@ -1,4 +1,4 @@
-# ポケモン風ポートフォリオ
+# ポケモン風ポートフォリオです
 https://takaaa220.github.io/portfolio
 
 ## 概要
